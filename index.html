@@ -570,23 +570,19 @@
                 target="_blank"
                 class="member-social-media-link company-social-media-link"
               >
-                <svg class="member-social-media-icon"   height="24"
-                    width="24">
-                  <use
-                    href="./images/icons.svg#icon-instagram"
-                    
-                  ></use>
+                <svg class="member-social-media-icon" height="24" width="24">
+                  <use href="./images/icons.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
             <li class="social-media-list-item company-social-media">
-              <a href="https://twitter.com/" target="_blank" class="member-social-media-link company-social-media-link">
-                <svg class="member-social-media-icon"   height="24"
-                    width="24">
-                  <use
-                    href="./images/icons.svg#icon-twitter"
-                    
-                  ></use>
+              <a
+                href="https://twitter.com/"
+                target="_blank"
+                class="member-social-media-link company-social-media-link"
+              >
+                <svg class="member-social-media-icon" height="24" width="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
                 </svg>
               </a>
             </li>
@@ -596,12 +592,8 @@
                 target="_blank"
                 class="member-social-media-link company-social-media-link"
               >
-                <svg class="member-social-media-icon"   height="24"
-                    width="24">
-                  <use
-                    href="./images/icons.svg#icon-facebook"
-                   
-                  ></use>
+                <svg class="member-social-media-icon" height="24" width="24">
+                  <use href="./images/icons.svg#icon-facebook"></use>
                 </svg>
               </a>
             </li>
@@ -611,13 +603,8 @@
                 target="_blank"
                 class="member-social-media-link company-social-media-link"
               >
-                <svg class="member-social-media-icon"
-                  height="24"
-                    width="24">
-                  <use
-                    href="./images/icons.svg#icon-linkedin"
-                
-                  ></use>
+                <svg class="member-social-media-icon" height="24" width="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
                 </svg>
               </a>
             </li>
@@ -625,5 +612,65 @@
         </div>
       </div>
     </footer>
+    <div class="modal-window">
+      <form>
+        <div class="modal-window-content">
+          <div>
+            <button class="close-btn">
+              <svg class="close-icon" height="8" width="8">
+                <use href="./images/icons.svg#icon-exit"></use>
+              </svg>
+            </button>
+          </div>
+          <h2 class="popup-text">
+            Leave your contacts and we will call you back
+          </h2>
+          <div class="form-fields-container">
+            <div class="modal-field-section">
+              <label for="username" class="form-label">Name</label>
+              <svg class="modal-icon" height="16" width="16">
+                <use href="./images/icons.svg#icon-person"></use>
+              </svg>
+              <input id="username" type="text" class="form-field" />
+            </div>
+            <div class="modal-field-section">
+              <label for="user-phone" class="form-label">Phone</label>
+              <svg class="modal-icon" height="16" width="16">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+              <input id="user=phone" type="tel" class="form-field" />
+            </div>
+            <div class="modal-field-section">
+              <label for="user-email" class="form-label">Email</label>
+              <svg class="modal-icon" height="16" width="16">
+                <use href="./images/icons.svg#icon-mail"></use>
+              </svg>
+              <input id="user-email" type="email" class="form-field" />
+            </div>
+            <label for="user-comment" class="form-label">Comment</label>
+            <textarea
+              id="user-comment"
+              rows="6"
+              placeholder="Text input"
+              class="textarea"
+            ></textarea>
+            <label for="agreement" class="form-label">
+              <input
+                id="agreement"
+                type="checkbox"
+                value="yes"
+                class="checkbox-element"
+              />
+              I accept the terms and conditions of the
+              <a href="" target="_blank" class="privacy-policy"
+                >Privacy Policy</a
+              ></label
+            >
+          </div>
+          <button class="order-btn send-btn">Send</button>
+        </div>
+        <div></div>
+      </form>
+    </div>
   </body>
 </html>

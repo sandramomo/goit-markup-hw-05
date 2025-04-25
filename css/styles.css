@@ -455,7 +455,7 @@ img {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  color:#ffffff;
+  color: #ffffff;
   letter-spacing: 0.02em;
   margin-bottom: 16px;
 }
@@ -466,4 +466,111 @@ img {
 .company-social-media-link:hover,
 .company-social-media-link:focus {
   background-color: #31d0aa;
+}
+.modal-window {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(46, 47, 66, 0.4);
+}
+.modal-window-content {
+  position: relative;
+  background-color: #fcfcfc;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
+    0 2px 1px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  width: 408px;
+  height: 584px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.close-btn {
+  /* LAYOUT */
+  position: absolute;
+  right: 24px;
+  top: 24px;
+  /* STYLE */
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+.close-icon {
+  fill:#111111
+}
+.popup-text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #2e2f42;
+  padding: 72px 0 16px 0;
+}
+.modal-field-section {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.form-label {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 117%;
+  letter-spacing: 0.04em;
+  color: #8e8f99;
+  margin-bottom: 4px;
+}
+.form-fields-container {
+  display: flex;
+  flex-direction: column;
+}
+.form-field {
+  padding-left:38px;
+  height: 40px;
+  width: 360px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+.textarea {
+  max-width: 360px;
+  max-height: 120px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 4px;
+  margin-bottom: 16px;
+}
+.checkbox-element {
+  border-radius: 2px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+}
+.privacy-policy {
+  line-height: 133%;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #4d5ae5;
+}
+.send-btn {
+  margin: 24px 0 24px 0;
+  border-radius: 4px;
+  padding: 16px 32px;
+  width: 169px;
+  height: 56px;
+}
+.modal-icon {
+  position: absolute;
+  top: 29px;
+  left: 16px;
+  fill: #111111;
 }
