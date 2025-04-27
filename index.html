@@ -562,7 +562,7 @@
           </p>
         </div>
         <div class="footer-social-media">
-          <h3 class="footer-containers-title">Social media</h3>
+          <p class="footer-containers-title">Social media</p>
           <ul class="company-social-media-list">
             <li class="social-media-list-item company-social-media">
               <a
@@ -611,9 +611,16 @@
           </ul>
         </div>
         <div class="footer-form">
-          <h3 class="footer-containers-title">Subscribe</h3>
+          <p class="footer-containers-title">Subscribe</p>
           <form class="footer-input-container">
-            <input name="Useremail" type="email" placeholder="E-mail" class="footer-input" />
+            <label class="footer-input-label">
+              <input
+                name="Useremail"
+                type="email"
+                placeholder="E-mail"
+                class="footer-input"
+              />
+            </label>
             <button type="submit" class="order-btn subscribe-btn">
               Subscribe
               <svg width="24" height="24" class="subscribe-icon">
@@ -624,65 +631,90 @@
         </div>
       </div>
     </footer>
-   <div class="modal-window visually-hidden is-open ">
-      <form class="modal-window-content">
-        <button class="close-btn">
+    <div class="modal-window visually-hidden is-open">
+      <div class="modal-window-container">
+        <button class="close-btn" type="button">
           <svg class="close-icon" height="8" width="8">
             <use href="./images/icons.svg#icon-exit"></use>
           </svg>
         </button>
-        <h2 class="popup-text">
-          Leave your contacts and we will call you back
-        </h2>
-        <div class="form-fields-container">
-          <div class="modal-field-section">
-            <label for="username" class="form-label">Name</label>
-            
-            <svg class="modal-icon" height="16" width="16">
-              <use href="./images/icons.svg#icon-person"></use>
-            </svg>
-            <input name= "username" id="username" type="text" class="form-field" />
-           
+        <p class="popup-text">Leave your contacts and we will call you back</p>
+        <form class="modal-window-content">
+          <div class="form-fields-container">
+            <label for="user-name" class="form-label">Name</label>
+            <div class="modal-field-section">
+              <input
+                name="user-name"
+                id="user-name"
+                type="text"
+                class="form-field"
+              />
+              <svg class="modal-icon" height="24" width="18">
+                <use href="./images/icons.svg#icon-person"></use>
+              </svg>
+            </div>
           </div>
-          <div class="modal-field-section">
+          <div class="form-fields-container">
             <label for="user-phone" class="form-label">Phone</label>
-            <svg class="modal-icon" height="16" width="16">
-              <use href="./images/icons.svg#icon-phone"></use>
-            </svg>
-            <input name="user=phone" id="user=phone" type="tel" class="form-field" />
+            <div class="modal-field-section">
+              <input
+                name="user-phone"
+                id="user-phone"
+                type="tel"
+                class="form-field"
+              />
+              <svg class="modal-icon" height="24" width="18">
+                <use href="./images/icons.svg#icon-phone"></use>
+              </svg>
+            </div>
           </div>
-          <div class="modal-field-section">
+          <div class="form-fields-container">
             <label for="user-email" class="form-label">Email</label>
-            <svg class="modal-icon" height="16" width="16">
-              <use href="./images/icons.svg#icon-mail"></use>
-            </svg>
-            <input name="useremail" id="user-email" type="email" class="form-field" />
+            <div class="modal-field-section">
+              <input
+                name="user-email"
+                id="user-email"
+                type="email"
+                class="form-field"
+              />
+              <svg class="modal-icon" height="24" width="18">
+                <use href="./images/icons.svg#icon-mail"></use>
+              </svg>
+            </div>
           </div>
-          <label for="user-comment" class="form-label">Comment</label>
-          <textarea name="user-comment"
-            id="user-comment"
-            rows="6"
-            placeholder="Text input"
-            class="textarea"
-          ></textarea>
+          <div class="form-fields-container">
+            <label for="user-comment" class="form-label">Comment</label>
+            <textarea
+              name="user-comment"
+              id="user-comment"
+              rows="6"
+              placeholder="Text input"
+              class="textarea"
+            ></textarea>
+          </div>
           <div class="agreement-element">
-            <input name="agreement"
-              id="agreement"
+            <input
+              name="user-privacy"
+              id="user-privacy"
               type="checkbox"
-              value="yes"
-              class="checkbox-element"
+              value="true"
+              class="checkbox-element visually-hidden"
             />
-            <label for="agreement" class="form-label"
-              >I accept the terms and conditions of the
+            <label for="user-privacy" class="form-label">
+              <span class="label-element">
+                <svg class="agreement-icon" height="8" width="1">
+                  <use href="./images/icons.svg#icon-agreement"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
               <a href="" target="_blank" class="privacy-policy"
                 >Privacy Policy</a
               >
             </label>
-            <svg class="agreement-icon" height="16" width="16"><use href="./images/icons.svg#icon-agreement"></use></svg>
           </div>
-        </div>
-        <button type="submit" class="order-btn send-btn ">Send</button>
-      </form>
-    </div> 
+          <button type="submit" class="order-btn send-btn">Send</button>
+        </form>
+      </div>
+    </div>
   </body>
 </html>
